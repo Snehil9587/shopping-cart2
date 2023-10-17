@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&family=Poppins:ital,wght@0,200;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../shopping cart/shoppingcart.css">
+    <title>Shoppin Cart</title>
+</head>
+
+<body>
+    <section class="header">
+        <!-- <img src="../shopping cart/assests/header.webp" alt=""> -->
+        <div class="container">
+            <h1>Buy The Phone that Suits you Best</h1>
+            <h3>Have Great Time!</h3>
+        </div>
+    </section>
+
+    <!-- Product List -->
+
+    <section class="mobile">
+        <div class="container">
+
+            <div class="mobile-head">
+                <h2>Choose Your Phone</h2>
+                <h3>Your Phone Your Style</h3>
+            </div>
+
+            <div class="product-list">
+
+                <div class="productcard">
+
+                    <div class="card-body">
+                        <img src="../shopping cart/assests/Apple-iPhone-14-Pro.webp" alt="iPhone14pro.webp"
+                            class="product-image">
+                        <span class="product-name">Apple iPhone14 Pro</span>
+                        <div class="product-price">
+                            <p>Price: ₹</p>
+                            <span class="price">99,999.00</span>
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="addItem" type="button">Add to Cart</button>
+                    </div>
+
+                </div>
+
+                <div class="productcard">
+
+                    <div class="card-body">
+                        <img src="../shopping cart/assests/Samsung-galaxy.jpg" alt="Samsung-galaxy.jpg"
+                            class="product-image">
+                        <span class="product-name">Samsung-galaxy</span>
+                        <div class="product-price">
+                            <p>Price: ₹</p>
+                            <span class="price">79,899.00</span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="addItem" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="productcard">
+                    <div class="card-body">
+                        <img src="../shopping cart/assests/vivo.jpeg" alt="vivo.jpeg" class="product-image">
+                        <span class="product-name">Vivo H36</span>
+                        <div class="product-price">
+                            <p>Price: ₹</p>
+                            <span class="price">40,000.00</span>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="addItem" type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-list">
+                <div class="productcard">
+                    <div class="card-body">
+                        <img src="../shopping cart/assests/motorola-edge-40.webp" alt="motorola-edge-40.webp"
+                            class="product-image">
+                        <h3 class="product-name">Motorola Edge 40</h3>
+                        <div class="product-price">
+                            <p>Price: ₹</p>
+                            <span class="price">75,000.00</span>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <button class="addItem" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="productcard">
+                    <div class="card-body">
+                        <img src="../shopping cart/assests/oppo.jpeg" alt="oppo.webp" class="product-image">
+                        <h3 class="product-name">Oppo A52</h3>
+                        <div class="product-price">
+                            <p>Price: ₹</p>
+                            <span class="price">63,000.00</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="addItem" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="productcard">
+                    <div class="card-body">
+                        <img src="../shopping cart/assests/Samsung flip.jpg" alt="Samsung-flip.webp"
+                            class="product-image">
+                        <span class="product-name">Samsung Z5 Flip</span>
+                        <div class="product-price">
+                            <p>Price: ₹</p>
+                            <span class="price">98000.00</span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <button class="addItem" type="button">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <div id="imgcopy">
+
+    </div>
+
+    <!-- Cart -->
+    <section class="cart">
+        <div class="container">
+            <h2>Item Added</h2>
+            <div class="cartItemsDisplay">
+                <span class="cartItem">Items</span>
+                <span class="cartPrice">Price</span>
+                <span class="cartQuantity">Quantity</span>
+            </div>
+
+            <div class="cartItemsSelected"></div>
+
+            <div class="cartTotal">
+                <h4 class="cartTotalHead">Total</h4>
+                <span class="cartTotalPrice">0</span>
+            </div>
+        </div>
+
+    </section>
+
+
+</body>
+<script src="../shopping cart/shoppingcart.js"></script>
+
+</html>
