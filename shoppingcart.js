@@ -10,6 +10,7 @@ for (var i = 0; i < addToCartButtons.length; i++) {
 function removeProduct(event) {
     var removeButton = event.target;
     removeButton.parentElement.parentElement.remove();
+    updateCartTotal();
 }
 
 //Selects the items from the button clicked
@@ -21,14 +22,15 @@ function addToCart(event) {
     var productImage = shopItem.querySelector('.product-image').src;
 
     addItemToCart(productPrice, productName, productImage);
-    console.log(button, "clicked successfully");
-
+    updateCartTotal();
 }
+
 //Adds item to the cart 
 function addItemToCart(productPrice, productName, productImage) {
     var cartDisplay = document.createElement('div');
     cartDisplay.classList.add('cartItemsDisplay');
     var cartItems = document.getElementsByClassName('cartItemsSelected')[0];
+    //checks wheter the selected item is present in cart or not
     var cartItemNames = cartItems.getElementsByClassName('cartProductName');
     for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == productName) {
@@ -38,16 +40,44 @@ function addItemToCart(productPrice, productName, productImage) {
     }
     var cartItemContents = `
         <div class="cartProductDisplay">
-            <img class="cartPrdouctImage" src="${productImage}" width="100" height="100">
+            <img class="cartPrdouctImage" src="${productImage}">
             <span class="cartProductName">${productName}</span>
         </div>
         <span class="cartProductPrice">${productPrice}</span>
         <div class="cartQuantity">
             <input class="cartProductQuantity" type="number" value="1">
-            <button class="btn btn-danger" type="button"><i class="fa fa-trash"></i></button>
+            <button class="btn btn-danger" type="button">Remove</button>
         </div>`
+
+    //add a + and - button in input field for quantity
+
     cartDisplay.innerHTML = cartItemContents;
     cartItems.append(cartDisplay);
-    cartDisplay.getElementsByClassName('btn-danger')[0].addEventListener('click', removeProduct)
+    cartDisplay.getElementsByClassName('btn-danger')[0].addEventListener('click', removeProduct);
     // cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
+}
+
+function updateCartTotal() {
+    var cartProducts = document.getElementsByClassName('cartItemsSelected')[0];
+    var cartItems = cartProducts.getElementsByClassName('cartItemsDisplay');
+    var total = 0;
+    // console.log(cartProducts);
+    console.log(total);
+
+    for (var i = 0; i < cartItems.length; i++) {
+        var cartProductItem = cartItems[i];
+        var productPrice = cartProductItem.getElementsByClassName('cartProductPrice')[0];
+        // console.log(productPrice);
+        var productQuantity = cartProductItem.getElementsByClassName('cartProductQuantity')[0];
+        // console.log(productQuantity);
+
+        var price = parseFloat(productPrice.innerText.replace('₹', ''));
+        var quantity = productQuantity.value;
+        total = total + (price * quantity);
+        console.log(total);
+    }
+
+    total = Math.round(total * 100) / 100;
+    document.getElementsByClassName('cartTotalPrice')[0].innerText = '₹' + total;
+
 }

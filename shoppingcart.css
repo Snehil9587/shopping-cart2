@@ -102,7 +102,7 @@ ul {
 
 .mobile-head h2 {
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 
 .mobile-head h3 {
@@ -156,11 +156,23 @@ ul {
     word-spacing: 3px;
 }
 
+.cartItemsDisplayHead {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    width: 100%;
+}
+
 .cartItemsDisplay {
     display: flex;
     gap: 50px;
     align-items: center;
     width: 100%;
+}
+
+.cartItemsDisplayHead span {
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .cartItemsDisplay span {
@@ -190,24 +202,71 @@ ul {
 .cartItemsSelected {
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 
 .cartProductDisplay {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 25%;
     padding-left: 20px;
+    gap: 20px;
 }
 
 .cartItem {
-    width: 28%;
+    width: 23%;
     padding: 20px;
 }
 
 .cartPrice {
-    width: 20%;
+    width: 15%;
+    padding: 20px;
 }
 
 .cartQuantity {
+    display: flex;
+    gap: 60px;
     width: 30%;
+}
+
+.cartPrdouctImage {
+    height: 100px;
+    width: 100px;
+}
+
+.cartProductPrice {
+    width: 13%;
+}
+
+.cartProductQuantity {
+    width: 65px;
+    text-align: center;
+    padding: 5px 5px 5px 15px;
+}
+
+.btn-danger:hover i {
+    animation: shaking 0.4s infinite;
+    font-size: 25px;
+}
+
+@keyframes shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    70% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 }
