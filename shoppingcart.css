@@ -14,6 +14,75 @@ ul {
 }
 
 .header {
+    background-color: white;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0px 10px 27px 3px rgba(221, 221, 221, 0.3);
+}
+
+.header-align {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.barnav ul {
+    margin: 0px;
+}
+
+.barnav ul li {
+    font-weight: 900;
+}
+
+.navlist {
+    display: flex;
+    gap: 60px;
+}
+
+.company-logo img {
+    height: 60px;
+    width: 60px;
+}
+
+.company-logo p {
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.buycart {
+    display: flex;
+    gap: 80px;
+}
+
+.carticons {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 40px;
+}
+
+.buybtn button {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    color: black;
+    background: transparent;
+    border: 1px solid #EEEEEE;
+    font-weight: 900;
+}
+
+.buybtn button:hover {
+    border: 1px solid #384aeb;
+}
+
+.banner {
     height: 70vh;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../shopping\ cart/assests/header.webp');
     background-repeat: no-repeat;
@@ -22,9 +91,10 @@ ul {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin-top: 88px;
 }
 
-.header h1 {
+.banner h1 {
     text-align: center;
     font-size: 50px;
     font-weight: 800;
@@ -33,7 +103,7 @@ ul {
     color: white;
 }
 
-.header h3 {
+.banner h3 {
     color: white;
     font-size: 25px;
     font-weight: 800;
@@ -102,7 +172,7 @@ ul {
 
 .mobile-head h2 {
     font-weight: 700;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 .mobile-head h3 {
@@ -182,7 +252,7 @@ ul {
 
 .cartTotal {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     gap: 50px;
 }
@@ -223,10 +293,16 @@ ul {
     padding: 20px;
 }
 
+.cartQuantityTitle {
+    display: flex;
+    gap: 60px;
+    width: 7%;
+}
+
 .cartQuantity {
     display: flex;
     gap: 60px;
-    width: 30%;
+    width: 7%;
 }
 
 .cartPrdouctImage {
@@ -269,4 +345,120 @@ ul {
     100% {
         transform: rotate(0deg);
     }
+}
+
+.footer {
+    background: #002347;
+    color: #7b838a;
+    padding: 150px 10px;
+    font-weight: 700;
+}
+
+.footer h5 {
+    color: whitesmoke;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.footer h4 {
+    color: whitesmoke;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.footer .container {
+    padding: 0px;
+}
+
+.footerItem {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    gap: 15px;
+}
+
+.footerItem p {
+    width: 300px;
+    text-align: justify;
+}
+
+.footer-align {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.footerlists {
+    display: flex;
+    gap: 80px;
+}
+
+.quicklink {
+    width: 150px;
+}
+
+.quicklinklist {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quicklinklist li:hover {
+    color: #384aeb;
+}
+
+.galary {
+    display: flex;
+    gap: 15px;
+}
+
+.galary-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.galary-item img {
+    width: 75px;
+    height: 75px;
+}
+
+.contactlist span {
+    position: relative;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    background: #384aeb;
+    color: #ffffff;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactlist {
+    display: flex;
+    gap: 20px;
+}
+
+.contactlist p {
+    margin-bottom: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mission {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mission p {
+    margin-bottom: 10px;
 }

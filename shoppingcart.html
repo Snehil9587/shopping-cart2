@@ -17,7 +17,36 @@
 
 <body>
     <section class="header">
-        <!-- <img src="../shopping cart/assests/header.webp" alt=""> -->
+        <div class="container">
+            <div class="header-align">
+                <div class="company-logo">
+                    <img src="../shopping cart/assests/companylogo.png" alt="">
+                    <p>STARK</p>
+                </div>
+                <div class="barnav">
+                    <ul class="navlist">
+                        <li>Home</li>
+                        <li>Shop</li>
+                        <li>Blog</li>
+                        <li>Pages</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="buycart">
+                    <div class="carticons">
+                        <span class="icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                        <span class="icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="buybtn">
+                        <button>BUY NOW</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="banner">
         <div class="container">
             <h1>Buy The Phone that Suits you Best</h1>
             <h3>Have Great Time!</h3>
@@ -126,7 +155,7 @@
                         <span class="product-name">Samsung Z5 Flip</span>
                         <div class="product-price">
                             <p>Price: </p>
-                            <span class="price">₹98000.00</span>
+                            <span class="price">₹98,000.00</span>
                         </div>
                     </div>
 
@@ -145,21 +174,108 @@
     <!-- Cart -->
     <section class="cart">
         <div class="container">
-            <h2>Item Added 1</h2>
+            <h2>Item Added</h2>
             <div class="cartItemsDisplayHead">
                 <span class="cartItem">Items</span>
                 <span class="cartPrice">Price</span>
-                <span class="cartQuantity">Quantity</span>
+                <span class="cartQuantityTitle">Quantity</span>
+                <button class="btn btn-danger" onclick="removeall()">Remove All</button>
             </div>
 
             <div class="cartItemsSelected"></div>
 
             <div class="cartTotal">
                 <h4 class="cartTotalHead">Total</h4>
-                <span class="cartTotalPrice">₹0</span>
+                <span class="cartTotalPrice"></span>
             </div>
         </div>
 
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer-align">
+                <div class="footerItem">
+                    <h4>Our Mission</h4>
+                    <div class="mission">
+                        <p>So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep
+                            moved us lan Gathering thing us land years living.</p>
+                        <p>So seed seed green that winged cattle in. Gathering thing made fly you're no divided deep
+                            moved.</p>
+                    </div>
+                </div>
+                <div class="footerlists">
+                    <div class="footerItem">
+                        <h4>Quick Links</h4>
+                        <div class="quicklink">
+                            <ul class="quicklinklist">
+                                <li>Home</li>
+                                <li>Shop</li>
+                                <li>Blog</li>
+                                <li>Product</li>
+                                <li>Brand</li>
+                                <li>Contact</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footerItem">
+                        <h4>Galary</h4>
+                        <div class="galary">
+                            <div class="galary-item">
+                                <img src="assests/Apple-iPhone-14-Pro.webp" alt="">
+                                <img src="assests/motorola-edge-40.webp" alt="">
+                                <img src="assests/oppo.jpeg" alt="">
+                            </div>
+                            <div class="galary-item">
+                                <img src="assests/Samsung flip.jpg" alt="">
+                                <img src="assests/Samsung-galaxy.jpg" alt="">
+                                <img src="assests/vivo.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footerItem">
+                        <h4>Contact</h4>
+                        <div class="contact">
+
+                            <div class="contactlist">
+                                <div class="contacthead">
+                                    <span class="icon"><i class="fa fa-location-arrow" aria-hidden="true"></i></span>
+                                </div>
+                                <div>
+                                    <h5>Head Office</h5>
+                                    <p>H-73,Sector 63,Noida,Delhi</p>
+                                </div>
+                            </div>
+
+                            <div class="contactlist">
+                                <div class="contacthead">
+                                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                </div>
+                                <div>
+                                    <h5>Phone Number</h5>
+                                    <p>+91-7894561230</p>
+                                    <p>+91-8975236103</p>
+                                </div>
+                            </div>
+
+                            <div class="contactlist">
+                                <div class="contacthead">
+                                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                </div>
+                                <div>
+                                    <h5>Email Us</h5>
+                                    <p>oneind@gmail.com</p>
+                                    <p>snehil@gmail.com</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
