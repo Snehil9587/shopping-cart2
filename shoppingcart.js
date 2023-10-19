@@ -125,3 +125,23 @@ function updateCartTotal() {
     document.getElementsByClassName('cartTotalPrice')[0].innerText = '₹ ' + formattedTotal;
 
 }
+
+
+//Buttons for mobile accesories
+function openProduct(evt, productListName) {
+    var i, btntab, productlist;
+
+    productlist = document.getElementsByClassName('productlist');
+    for (i = 0; i < productlist.length; i++) {
+        productlist[i].style.display = "none";
+    }
+
+    btntab = document.getElementsByClassName('btntab');
+    for (i = 0; i < btntab.length; i++) {
+        btntab[i].className = btntab[i].className.replace(" active", "");
+    }
+    document.getElementById(productListName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+//Sets a default active class
+document.getElementById("defaultOpen").click();

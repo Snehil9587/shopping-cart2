@@ -35,6 +35,7 @@ ul {
 
 .barnav ul li {
     font-weight: 900;
+    cursor: pointer;
 }
 
 .navlist {
@@ -461,4 +462,75 @@ ul {
 
 .mission p {
     margin-bottom: 10px;
+}
+
+.star-rating {
+    color: orange;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.features {
+    margin: 50px 10px;
+}
+
+
+.feature-align {
+    display: flex;
+}
+
+.featurecard {
+    width: 100%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border: solid 1px #e8e8e8;
+    background-color: white;
+    margin: 10px;
+    padding: 15px 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.featurecard .icon {
+    font-size: 40px;
+    color: #384aeb;
+}
+
+.featurecard h3 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.featurecard p {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.accesoriesbuttons button {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    color: black;
+    background: transparent;
+    border: 1px solid #EEEEEE;
+    font-weight: 900;
+
+}
+
+.accesoriesbuttons button.active {
+    background-color: #384aeb;
+    color: white;
+}
+
+.accesoriesbuttons button:hover {
+    background-color: #6d7cff;
+    color: white;
+}
+
+.productlist {
+    display: none;
 }
